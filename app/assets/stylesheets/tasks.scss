@@ -1,3 +1,90 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+$main: #D3D3D3;
+$title: #D3D3D3;
+$description: cornflowerblue;
+$light: #fff;
+$delete: #ff0000;
+$btn: #0000ff;
+$dark: #000000;
+
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+  font-size: 2em;
+  color: $main;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  color: $description;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  text-transform: capitalize;
+  color: $title;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1em;
+  text-transform: capitalize;
+  color: $description;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.edit {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+// .btn {
+//   border: 1px solid $btn;
+//   background-color: $btn;
+//   padding: 5px;
+//   box-shadow: 3px 2px;
+//   border-radius: 10px;
+//   color: $light;
+//   box-shadow: 2px 1px $dark;
+
+//   &:hover{
+//     color: $btn;
+//     background-color: $light;
+//   }
+// }
+
+// .btn-delete {
+//   border: 1px solid $delete;
+//   background-color: $delete;
+//   padding: 5px;
+//   box-shadow: 3px 2px;
+//   border-radius: 10px;
+//   color: $light;
+//   box-shadow: 2px 1px $dark;
+
+//   &:hover{
+//     color: $delete;
+//     background-color: $light;
+//   }
+// }
+
+.btn-block {
+  display: flex;
+  justify-content: space-evenly;
+}

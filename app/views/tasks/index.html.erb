@@ -1,9 +1,21 @@
-<h1>NEW TASK</h1>
+<div class="row mt-4">
+  <div class="col">
+  <h1>NEW TASK</h1>
 
-<!-- displaying the tasks -->
-<ul>
-  <% @tasks.each do |task| %>
-    <li><%= link_to task.title, task_path(task) %></li>
-  <% end %>
-</ul>
-<%= link_to "Add a New Task", new_path %>
+  <div class="col">
+    <!-- displaying the tasks -->
+    <ul>
+      <% @tasks.each do |task| %>
+        <li><input type="checkbox" class="checkbox"><%= link_to task.title, task_path(task) %></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <div class="col">
+    <%= link_to new_path do %>
+      <p class="btn btn-info"><i class="fas fa-plus"></i> Add a New Task</p>
+    <% end %>
+  </div>
+
+  </div>
+</div>

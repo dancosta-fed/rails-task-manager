@@ -1,9 +1,18 @@
-<h1>TASK DETAIL</h1>
+<div class="row mt-4">
+  <h1>TASK DETAIL</h1>
 
-<h2> <%= @task.title %> </h2>
-<h3> <%= @task.details %> </h3>
+  <div class="detail">
 
-<%= link_to "Edit your task", edit_task_path %>
+    <h2> <%= @task.title %> </h2>
+    <h3> <%= @task.details %> </h3>
 
-<%= link_to "Delete #{@task.title}", task_path(@task), method: :delete, data: { confirm: "Are you sure?" } %> <i class="fas fa-trash"></i>
+  <div class="btn-block">
+    <%= link_to "Edit", edit_task_path, class: "btn btn-primary" %>
 
+    <%= link_to "Delete #{@task.title}", task_path(@task), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+
+    <%= link_to "Get Back", tasks_path, class: "btn btn-dark" %>
+
+  </div>
+  </div>
+</div>
